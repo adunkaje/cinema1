@@ -11,7 +11,8 @@ package cinema;
  * @author User
  */
 interface popcorn {
-    final int corns = 50;
-    final int cornm = 60;
-    final int cornl = 70;
+    
+    final int cornm = 80;
+    final int cornl = 100;
+    public void print();
 }

@@ -10,7 +10,8 @@ package cinema;
  * @author User
  */
 interface drink {
-    int cokes = 40;
-    int cokem = 50;
-    int cokel = 60;
+    
+    final int cokem = 80;
+    final int cokel = 100;
+    public void print();
 }

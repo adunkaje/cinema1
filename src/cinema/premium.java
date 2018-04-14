@@ -7,21 +7,24 @@ package cinema;
 import java.util.Scanner;
 
 class premium extends theater{
+    private int s;
     public void movie(){
-        
-    }
-    public void menu(){
-        
-    }
- public int seat1(int a){
-        int s;
-        Scanner a6 = new Scanner(System.in);
+    Scanner a6 = new Scanner(System.in);
         do{
             System.out.println("How many do you need ? (not more than20)");
             System.out.print(">>>>>>>");
             s = a6.nextInt();
-        }while(s>20);
-        
+        }while(s>20);    
+    }
+    
+ public int seat1(){       
+        this.movie();
         return s;
-    }   
+    } 
+ public int pricec(int a){
+        this.setp(200);
+        int price = this.getp();
+        int ans = price*a;
+        return ans ;
+    }
 }

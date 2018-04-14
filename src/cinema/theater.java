@@ -10,14 +10,24 @@ package cinema;
  * @author User
  */
 abstract class theater {
-    int price ;
+    private int price ;
+    private int q;
     int movie ;
     
     
     public abstract void movie();
-    public abstract void menu();
-
     
-   
     
+   public void setp(int a){
+       this.price = a ;
+   }
+   public int getp(){
+       return price;
+   }
+   public void sets(int s){
+       this.q = s ;
+   }
+   public int gets(){
+       return q;
+   }
 }
