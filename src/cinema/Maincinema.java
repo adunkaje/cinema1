@@ -68,17 +68,33 @@ class Maincinema {
         Scanner ad1 = new Scanner(System.in);
         String v1 = ad1.nextLine();
         cf1 = v1.charAt(0);
+        
         if(cf1 =='y'||cf1=='Y'){
+
         food2 = t5.popcorn1();
+        if(food2 != null){
         amount1 =t5.printfood();
         price1=t5.popprice(amount1,food2);
         }
+        if(food2==null){
+          food2 = "(There is not food that your order.)";
+        food3 = "(Not drink that you order.)";  
+        }
+        dis = t6.promotionprint(n3, ns, food2, amount1,food3,amount2,pc,price1,price2);
+        }
         if(cf1 =='y'||cf1=='Y'){
         food3 = t5.coke1();
+        if(food3 != null){
         amount2 =t5.printfood();
         price2=t5.cokeprice(amount2,food3);
         }
+        if(food2==null){
+          food2 = "(There is not food that your order.)";
+        food3 = "(Not drink that you order.)";  
+        }
         dis = t6.promotionprint(n3, ns, food2, amount1,food3,amount2,pc,price1,price2);
+        }
+        //dis = t6.promotionprint(n3, ns, food2, amount1,food3,amount2,pc,price1,price2);
         ans = pc+price1+price2;
         
         
@@ -86,7 +102,7 @@ class Maincinema {
         System.out.println("Your movie is :"+moviename+"\nThe time is :"+time);
        System.out.println("Your seat is :"+n3+" amount "+ns+" price "+pc);
        System.out.println("Your Food is "+food2+" amount "+amount1+" price"+price1+"\nand "+food3+" amount "+amount2+" price "+price2);
-       System.out.println("Unit_cost is "+ans + "Discount is "+dis);
+       System.out.println("The Unit_cost is "+ans + " The Discount is "+dis);
        ans2 = ans-dis;
        System.out.println("ToTal cost is "+ ans2);
        System.out.println("**********************************************");
@@ -97,11 +113,11 @@ class Maincinema {
         cf2 = v0.charAt(0);
         if(cf2 =='y'||cf2=='Y'){
            total = credit(ans2);
-           System.out.println("The outstanding amount of all is" +total);
+           System.out.println("The outstanding amount of all is " +total);
         }else {
-           System.out.println("The outstanding amount of all is" +ans2); 
+           System.out.println("The outstanding amount of all is " +ans2); 
         }
-        System.out.println("Do you want to list again? (Y/N)");
+        System.out.println("Do you want to list again? (Y/N) ");
         Scanner y2 = new Scanner(System.in);
          v = y2.nextLine();
         h1 = v.charAt(0);
@@ -139,7 +155,6 @@ class Maincinema {
         int y = (int)((a)+(a*0.1));
         return y ;
     }
-    
     
     
 }

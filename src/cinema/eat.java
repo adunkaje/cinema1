@@ -13,7 +13,7 @@ public class eat extends theater implements popcorn,drink{
     int pop,coke,ans=0;
     char cf2,cf3,cf4;
     String k=null;
-    String j="none";
+    String j=null;
     public void movie(){
         
     }
@@ -69,6 +69,7 @@ public class eat extends theater implements popcorn,drink{
         }
             j=this.b(pop,0);
         }
+        
         return j;
     }
     public String coke1(){
