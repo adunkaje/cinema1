@@ -136,7 +136,7 @@ class Maincinema {
     
     }
     public static int credit(int a){
-        int y = (int)((a)-(a*0.1));
+        int y = (int)((a)+(a*0.1));
         return y ;
     }
     
