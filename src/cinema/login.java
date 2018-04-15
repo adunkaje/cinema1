@@ -31,13 +31,6 @@ public class login {
         System.out.println("---------------------------------------------");
         
     }
-    public String re1(){
-        
-        return f;
-    }
-    public String re2(){
-        
-        return k;
-    }
+   
      
 }

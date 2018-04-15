@@ -14,12 +14,12 @@ public class sofa extends theater{
     private int s;
     int ans;
     public void movie(){
-      Scanner a6 = new Scanner(System.in);
+        Scanner a6 = new Scanner(System.in);
         
             do{
-            System.out.println("How many do you need ? (not more than10)");
-            System.out.print("Enter");
-            s = a6.nextInt();
+                System.out.println("How many do you need ? (not more than10)");
+                System.out.print("Enter");
+                s = a6.nextInt();
             }while(s>10);  
     }
     public int seat1(){
