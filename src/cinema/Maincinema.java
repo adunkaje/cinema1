@@ -12,7 +12,7 @@ class Maincinema {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int a,b,p,s1,ns,pc = 0,amount1,amount2,price1,price2,dis=0,ans = 0,ans2=0,total=0;
+        int a,b,p,s1,ns,pc = 0,amount1=0,amount2=0,price1=0,price2=0,dis=0,ans = 0,ans2=0,total=0;
         char cf1,h,cf2,h1;
         String moviename,time,n1,n2,n3,food1,food2,food3,v;
             Scanner a1 = new Scanner(System.in);
