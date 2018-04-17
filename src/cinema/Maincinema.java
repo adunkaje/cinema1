@@ -49,11 +49,11 @@ class Maincinema {
                         if(h =='y'||h=='Y'){
                             t6.promotiondetail();
                         }
-                        
-                    System.out.println("-----Select Seat------");
-                    System.out.println("1.Sofa : 500 bath");
-                    System.out.println("2.Premium : 200 batn");
-                    System.out.print(">>>>>>>");
+                    t6.movie();   
+                    //System.out.println("-----Select Seat------");
+                    //System.out.println("1.Sofa : 500 bath");
+                    //System.out.println("2.Premium : 200 batn");
+                   // System.out.print(">>>>>>>");
                     Scanner a4 = new Scanner(System.in);
                     s1 = a4.nextInt();
                         for(int i=2 ;i<s1;i=2){

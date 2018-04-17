@@ -5,11 +5,13 @@
  */
 package cinema;
 import java.util.Scanner;
-public class promotion {
+public class promotion extends class1 {
     int a1,b1,c1,ans=0, an;
     char con1,con2,con3;
     String j,k,l;
-    
+    public void movie(){
+        super.print3();
+    }
     public int promotion1(int a){
         ans = 0;
         ans = (int)((a)*0.4);
