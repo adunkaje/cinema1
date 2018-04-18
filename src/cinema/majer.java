@@ -11,10 +11,11 @@ import java.util.Scanner;
         System.out.println("**********Select the movie**********");
         this.movie();
             do{
-                System.out.print("Enter >>>> ");
+                System.out.print("Enter number>>>>>>>");
                 movie = a1.nextInt();
             }while(!(movie == 1||movie == 2||movie == 3||movie == 4));
         System.out.println("You want to see the details of a movie?(Y/N)");
+        System.out.print("Enter :");
         Scanner a2 = new Scanner(System.in);
         String v = a2.nextLine();
         char h = v.charAt(0);
@@ -84,7 +85,8 @@ import java.util.Scanner;
         char h ;
             do{
                 this.menu();
-                System.out.println("You need to select a new movie?(Y/N)");
+                System.out.println("Do you need to select the movie again?(Y/N)");
+                System.out.print("Enter :");
                 Scanner a3 = new Scanner(System.in);
                 String v = a3.nextLine();
                 h = v.charAt(0);
@@ -101,7 +103,7 @@ import java.util.Scanner;
         System.out.println("4.At Night = 09.00 Pm ");
             do{
                 Scanner a4 = new Scanner(System.in);
-                System.out.print(">>>>>>>");
+                System.out.print("Enter number>>>>>>>");
                 v1 = a4.nextInt();
                     if(v1 == 1){
                         time = "09.00 Am";

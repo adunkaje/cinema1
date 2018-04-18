@@ -21,7 +21,7 @@ public class eat extends theater implements popcorn,drink{
     public void print(){
         System.out.println("1.Size M (80 bath)");
         System.out.println("2.Size L (100 bath)");
-        System.out.print(">>>>>>>>>>>>>");
+        System.out.print("Enter number>>>>>>>");
     }
     public int printfood(){
         System.out.print("How many do you want.");
@@ -56,6 +56,7 @@ public class eat extends theater implements popcorn,drink{
         j=null;
         Scanner eat2 = new Scanner(System.in);
         System.out.println("Do you want some Popcorn?(Y/N)");
+        System.out.print("Enter :");
         String v2 = eat2.nextLine();
         cf2 = v2.charAt(0);
             if(cf2 =='y'||cf2=='Y'){
@@ -64,7 +65,7 @@ public class eat extends theater implements popcorn,drink{
                 Scanner eat3 = new Scanner(System.in);
                 pop = eat3.nextInt();
                     for(int i=2 ;i<pop;i=2){
-                        System.out.print(">>>>>>>>>>>>>");
+                        System.out.print("Enter number>>>>>>>");
                         pop = eat3.nextInt();
                     }
                 j=this.b(pop,0);
@@ -76,6 +77,7 @@ public class eat extends theater implements popcorn,drink{
         j = null;
         Scanner eat3 = new Scanner(System.in);
         System.out.println("Do you want some Drink?(Y/N)");
+        System.out.print("Enter :");
         String v3 = eat3.nextLine();
         cf3 = v3.charAt(0);
             if(cf3 =='y'||cf3=='Y'){
@@ -84,7 +86,7 @@ public class eat extends theater implements popcorn,drink{
                 Scanner eat4 = new Scanner(System.in);
                 coke = eat4.nextInt();
                     for(int i=2 ;i<coke;i=2){
-                        System.out.print(">>>>>>>>>>>>>");
+                        System.out.print("Enter number>>>>>>>");
                         coke = eat3.nextInt();
                     }
                 j=this.b(0,coke);
