@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cinema;
 import java.util.Scanner;
  class majer extends theater{
@@ -32,8 +28,7 @@ import java.util.Scanner;
             System.out.println("1.Midnight Sun");
             System.out.println("109 minutes in length.");
             System.out.println("movie on March 22, 2018 ");
-            System.out.println("English / Thailand (dubbed) \n" +
-"English / Thailand (sub) ");
+            System.out.println("English / Thailand (dubbed) \n" +"English / Thailand (sub) ");
             System.out.println("Directed by Scott Spears.");
             System.out.println("AAK Cinema.");
             System.out.println("---------------------------------------------");
@@ -44,8 +39,7 @@ import java.util.Scanner;
             System.out.println("2.Pacific Rim : Uprising");
             System.out.println("110 minutes in length.");
             System.out.println("movie on March 23, 2018 ");
-            System.out.println("English / Thailand (dubbed) \n" +
-"English / Thailand (sub) " );
+            System.out.println("English / Thailand (dubbed) \n" +"English / Thailand (sub) " );
             System.out.println("Directed by: Steven s. Baby naika");
             System.out.println("AAK Cinema.");
             System.out.println("---------------------------------------------");
@@ -55,8 +49,7 @@ import java.util.Scanner;
              System.out.println("3.Avengers : Infinity War");
             System.out.println("160 minutes in length.");
             System.out.println("movie on April 25, 2018 ");
-            System.out.println("English / Thailand (dubbed) \n" +
-"English / Thailand (sub) " );
+            System.out.println("English / Thailand (dubbed) \n" +"English / Thailand (sub) " );
             System.out.println("Director: Anthony Russo, Joe Russo.");
             System.out.println("AAK Cinema.");
             System.out.println("---------------------------------------------");
@@ -66,8 +59,7 @@ import java.util.Scanner;
             System.out.println("4.Ready Player One");
             System.out.println("139 minutes in length.");
             System.out.println("movie on March 28, 2018 ");
-            System.out.println("English / Thailand (dubbed) \n" +
-"English / Thailand (sub) " );
+            System.out.println("English / Thailand (dubbed) \n" +"English / Thailand (sub) " );
             System.out.println("Director: Steven Spielberg.");
             System.out.println("AAK Cinema.");
              System.out.println("---------------------------------------------");

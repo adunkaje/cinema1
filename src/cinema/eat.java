@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cinema;
 import java.util.Scanner;
-/**
- *
- * @author User
- */
+
 public class eat extends theater implements popcorn,drink{
     int pop,coke,ans=0;
     char cf2,cf3,cf4;

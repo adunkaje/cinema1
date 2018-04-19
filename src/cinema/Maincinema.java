@@ -1,16 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cinema;
 import java.util.Scanner;
 
 class Maincinema {
-        
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         int a,b,p,s1,ns,pc = 0,amount1=0,amount2=0,price1=0,price2=0,dis=0,ans = 0,ans2=0,total=0;
         char cf1,h,cf2,h1;
@@ -51,7 +43,7 @@ class Maincinema {
                         if(h =='y'||h=='Y'){
                             t6.promotiondetail();
                         }
-                    t6.movie();   
+                    t6.movie();   //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
                     Scanner a4 = new Scanner(System.in);
                     s1 = a4.nextInt();
                         for(int i=2 ;i<s1;i=2){
@@ -72,18 +64,18 @@ class Maincinema {
                     System.out.print("Enter :");
                     String v1 = ad1.nextLine();
                     cf1 = v1.charAt(0);
-                    food2 = "(There is not food that your order.)"; //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
-                    food3 = "(Not drink that you order.)"; //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า             
+                    food2 = "(There is not food that your order.)"; 
+                    food3 = "(Not drink that you order.)";            
                         if(cf1 =='y'||cf1=='Y'){
                             food2 = t5.popcorn1();                            
                                 if(food2 != null){
                                     amount1 =t5.printfood();
                                     price1=t5.popprice(amount1,food2);
-                                    food3 = "(Not drink that you order.)"; //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
+                                    food3 = "(Not drink that you order.)"; 
                                 }                                
                                 if(food2==null){
-                                    food2 = "(There is not food that your order.)"; //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
-                                    food3 = "(Not drink that you order.)";  //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
+                                    food2 = "(There is not food that your order.)"; 
+                                    food3 = "(Not drink that you order.)";  
                                 }
                             dis = t6.promotionprint(n3, ns, food2, amount1,food3,amount2,pc,price1,price2);
                         }
@@ -95,20 +87,18 @@ class Maincinema {
                                     price2=t5.cokeprice(amount2,food3);
                                 }
                                 if(food3==null){
-                                    food2 = "(There is not food that your order.)"; //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
-                                    food3 = "(Not drink that you order.)";  //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
+                                    food2 = "(There is not food that your order.)"; 
+                                    food3 = "(Not drink that you order.)";  
                                 }
                             dis = t6.promotionprint(n3, ns, food2, amount1,food3,amount2,pc,price1,price2);
                         }
-                    //dis = t6.promotionprint(n3, ns, food2, amount1,food3,amount2,pc,price1,price2);
                     ans = pc+price1+price2;
-        
-        
                     System.out.println("**********************************************");
                     System.out.println("************Detail You Order !!!!!************");
                     System.out.println("Your movie is :"+moviename+"\nThe time is :"+time);
                     System.out.println("Your seat is :"+n3+" amount "+ns+" price "+pc);
-                    System.out.println("Your Food is "+food2+" amount "+amount1+" price"+price1+"\nand "+food3+" amount "+amount2+" price "+price2);
+                    System.out.println("Your Food is "+food2+" amount "+amount1+" price"+price1);
+                    System.out.println("And "+food3+" amount "+amount2+" price "+price2);
                     System.out.println("The Unit_cost is "+ans + " The Discount is "+dis);
                     ans2 = ans-dis;
                     System.out.println("ToTal cost is "+ ans2);
