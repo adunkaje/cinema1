@@ -28,8 +28,8 @@ class Maincinema {
                     price2=0;
                     dis=0;
                     p = t1.print();
-                    Maincinema t2 = new Maincinema();
-                    moviename = t2.movietime(p,0,0);
+                    send t2 = new send();
+                    moviename = t2.send(p,0,0);
                     premium t3 = new premium();
                     sofa t4 = new sofa();
                     promotion t6 = new promotion();
@@ -43,14 +43,14 @@ class Maincinema {
                         if(h =='y'||h=='Y'){
                             t6.promotiondetail();
                         }
-                    t6.movie();   //ตั้งไว้ดักในกรณีที่เลือกซื้ออย่างใดอย่างหนึ่งเพื่อให้ตัวแปรมีค่า
+                    t6.movie();   
                     Scanner a4 = new Scanner(System.in);
                     s1 = a4.nextInt();
                         for(int i=2 ;i<s1;i=2){
                             System.out.print("Enter number>>>>>>>");
                             s1 = a4.nextInt();
                         }
-                    n3 = t2.movietime(0,s1,0);
+                    n3 = t2.send(0,s1,0);
                         if(s1 == 1){
                             ns=t4.seat1();
                             pc =t4.pricec(ns);
@@ -109,8 +109,9 @@ class Maincinema {
                     Scanner y1 = new Scanner(System.in);
                     String v0 = y1.nextLine();
                     cf2 = v0.charAt(0);
+                    credit s4 = new credit();
                         if(cf2 =='y'||cf2=='Y'){
-                            total = credit(ans2);
+                            total = s4.credit(ans2);
                             System.out.println("The outstanding amount of all is " +total);
                         }else {
                             System.out.println("The outstanding amount of all is " +ans2); 
@@ -128,38 +129,4 @@ class Maincinema {
                     }
                 }while( h1 =='y'||h1 =='y');
     }
-    
-    
-    public static String movietime(int a,int b,int c){
-        String k = null;
-        switch(a){
-            case 1:
-               k = "Midnight Sun";
-               break;
-            case 2:
-               k = "Pacific Rim : Uprising";
-               break;
-            case 3:
-               k = "Avengers : Infinity War";
-               break;
-            case 4:
-               k = "Ready Player One";
-               break;    
-        }
-        switch(b){
-           case 1:
-               k = "Sofa (500 bath)";
-               break;
-           case 2:
-               k = "Premium (200 batn)";
-               break;
-        }
-        return  k;
-    }
-    
-    
-    public static int credit(int a){
-        int y = (int)((a)+(a*0.1));
-        return y ;
-    }  
 }

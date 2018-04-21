@@ -10,7 +10,7 @@ public class sofa extends theater{
         
             do{
                 System.out.println("How many do you need ? (not more than10)");
-                System.out.print("Enter");
+                System.out.print("Enter Number :");
                 s = a6.nextInt();
             }while(s>10);  
     }

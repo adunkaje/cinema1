@@ -6,7 +6,7 @@ public class promotion extends class1 {
     char con1,con2,con3;
     String j,k,l;
     public void movie(){
-        super.print3();
+        super.print10();
     }
     public int promotion1(int a){
         ans = 0;
@@ -44,13 +44,8 @@ public class promotion extends class1 {
     
     
     public static void promotiondetail(){
-        System.out.println("*************THE DETAIL OF THE PROMOTION***********");
-        System.out.println("1.Book premium 20 seats,buy popcorn size L (More than 2),coke size L (More than 2) discount 40%.");
-        System.out.println("2.Book sofa 5 seats, buy popcorn size L coke size L is 35% ");
-        System.out.println("3.Book premium 10 seats ,buy popcorn size L coke size L is 30% discount ");
-        System.out.println("4.Buy popcorn size L (More than 2) ,coke size M (More than 3) has a 10% ");
-        System.out.println("5.Book sofa 10 seats, buy popcorn size L (More than 2),coke size L (More than 2) is 50%.");
-        System.out.println("***************************************************");
+        databaseDetail s3 = new databaseDetail();
+        s3.print2();
     }
     
     
